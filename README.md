@@ -12,8 +12,10 @@ Version and shortversion in build.xml are set for the latest version of burp.
 
 Build Instructions: 
 
-* git clone git@github.com:liftsecurity/BurpSuite-MacOS.git
-* cd BurpSuite-MacOS
-* echo export "JAVA_HOME=\$(/usr/libexec/java_home)" >> ~/.bash_profile
-* cp {Full Path to burpsuite_pro_x.jar} ./burpsuite.jar
-* ant bundle
+```bash
+$ git clone git@github.com:liftsecurity/BurpSuite-MacOS.git
+$ cd BurpSuite-MacOS
+$ echo export "JAVA_HOME=\$(/usr/libexec/java_home)" >> ~/.bash_profile
+$ cp {Full Path to burpsuite_pro_x.jar} ./burpsuite.jar
+$ ant bundle
+```
