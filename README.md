@@ -4,7 +4,7 @@ BurpSuite-MacOS
 Build a MacOS .app wrapper for a user provided BurpSuite jar. 
 This will allow Burp Suite to function as a traditional Mac app, with standard behaviour as far as the dock/mission control goes.
 
-Screenshot of what it looks like running in the taskbar:
+Screenshot of what it looks like running in the dock:
 ![](https://i.cloudup.com/LmI3sxDnFP.png)
 
 By default, the build script assumes you are using the Burp Suite Professional.app directory to store all burp peripherals, such as bapps, log files, tmp directory, etc, and will copy them from the previous install into the new build.
