@@ -22,15 +22,15 @@ displayname="Burp Suite Professional"
 
 identifier="com.foo.bar"
 
-shortversion="1.6.2"
+shortversion="1.7.03"
 
-version="1.6.2"
+version="1. 7.03"
 
 icon="resources/icon.icns"
 
 mainclassname="burp.StartBurp"
 
-copyright="2014 PortSwigger"
+copyright="2015 PortSwigger"
 
 >
 
@@ -48,8 +48,8 @@ copyright="2014 PortSwigger"
 <option value="-Dcom.apple.textantialiasing=true"/>
 <option value="-Dcom.apple.antialiasing=true"/>
 <option value="-Dcom.apple.showGrowBox=false"/>
-<option value="-Dawt.toolkit=sun.lwawt.macosx.LWCToolkit"/>
-<option value="-Djava.awt.graphicsenv=sun.awt.CGraphicsEnvironment"/>
+<!-- <option value="-Dawt.toolkit=sun.lwawt.macosx.LWCToolkit"/> -->
+<!-- <option value="-Djava.awt.graphicsenv=sun.awt.CGraphicsEnvironment"/> -->
 <option value="-Dfile.encoding=UTF-8"/>
 <option value="-Dfile.encoding.pkg=sun.io"/>
 <option value="-Dfile.separator=/"/>

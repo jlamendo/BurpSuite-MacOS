@@ -1,0 +1,31 @@
+#!/bin/bash
+
+get_script_dir () {
+     SOURCE="${BASH_SOURCE[0]}"
+     while [ -h "$SOURCE" ]; do
+          DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+          SOURCE="$( readlink "$SOURCE" )"
+          [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+     done
+     $( cd -P "$( dirname "$SOURCE" )" )
+     pwd
+}
+
+prep_env () {
+mkdir -p "/Applications/Burp Suite Professional.app"
+mkdir -p "/Applications/Burp Suite Professional.app/tmp"
+mkdir -p "/Applications/Burp Suite Professional.app/log"
+}
+
+prep_env
+
+SCRIPT_DIR=$(get_script_dir)
+
+cd "${SCRIPT_DIR}"
+for f in "${SCRIPT_DIR}/burpsuite_pro_*.jar"; do
+		F=`echo $f`
+    	[ -f "${SCRIPT_DIR}/burpsuite.jar" ] && rm "${SCRIPT_DIR}/burpsuite.jar"
+		mv "$F" "${SCRIPT_DIR}/burpsuite.jar"
+		ant bundle && rm -rf "${SCRIPT_DIR}/Burp Suite Professional.app" && osascript -e 'display notification "Burp Suite Professional updated succesfully." with title "Burp Suite"'
+		break;
+done
