@@ -53,8 +53,6 @@ copyright="2015 PortSwigger"
 <option value="-Dfile.encoding=UTF-8"/>
 <option value="-Dfile.encoding.pkg=sun.io"/>
 <option value="-Dfile.separator=/"/>
-<option value="-Dapple.awt.UIElement=true"/>
-
 <arch name="x86_64"/>
 
 <arch name="i386"/>
