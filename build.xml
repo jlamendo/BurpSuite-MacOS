@@ -28,14 +28,15 @@ version="1.7.03"
 
 icon="resources/icon.icns"
 
-mainclassname="burp.StartBurp"
+mainclassname="larry.lau.BurpLoader"
 
-copyright="2015 PortSwigger"
+copyright="2017 PortSwigger"
 
 >
 
 
-<classpath file="burpsuite.jar"/>
+<classpath file="BurpLoader.jar"/>
+<classpath file="burpsuite_pro_v1.7.11.jar"/>
 
 <option value="-Xdock:icon=Contents/Resources/${bundle.icon}"/>
 <option value="-Djava.library.path=$APP_ROOT/Contents/Java/" />
