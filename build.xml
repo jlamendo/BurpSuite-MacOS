@@ -22,25 +22,25 @@ displayname="Burp Suite Professional"
 
 identifier="com.foo.bar"
 
-shortversion="1.7.03"
+shortversion="1.7.31"
 
-version="1.7.03"
+version="1.7.31"
 
 icon="resources/icon.icns"
 
-mainclassname="larry.lau.BurpLoader"
+mainclassname="burp.StartBurp"
 
-copyright="2017 PortSwigger"
+copyright="2018 PortSwigger"
 
 >
 
 
-<classpath file="BurpLoader.jar"/>
-<classpath file="burpsuite_pro_v1.7.11.jar"/>
+<classpath file="burp-loader-keygen.jar"/>
+<classpath file="burpsuite_pro_v1.7.31.jar"/>
 
 <option value="-Xdock:icon=Contents/Resources/${bundle.icon}"/>
+<option value="-Xbootclasspath/p:$APP_ROOT/Contents/Java/burp-loader-keygen.jar"/>
 <option value="-Djava.library.path=$APP_ROOT/Contents/Java/" />
-<option value="-splash:$APP_ROOT/Contents/Resources/splash.png"/>
 <option value="-Dapple.laf.useScreenMenuBar=true"/>
 <option value="-Dcom.apple.macos.use-file-dialog-packages=true"/>
 <option value="-Dcom.apple.macos.useScreenMenuBar=true"/>
@@ -62,27 +62,6 @@ copyright="2017 PortSwigger"
 <copy
     todir="./Burp Suite Professional.app/Contents/Resources" filtering="no">
     <fileset dir="resources"/>
-</copy>
-<!-- Comment out this section to create a fresh install for each burp release -->
-<copy
-    todir="./Burp Suite Professional.app/log" filtering="no">
-    <fileset dir="/Applications/Burp Suite Professional.app/log"/>
-</copy>
-<copy
-    todir="./Burp Suite Professional.app/tmp" filtering="no">
-    <fileset dir="/Applications/Burp Suite Professional.app/tmp"/>
-</copy>
-<copy
-    todir="./Burp Suite Professional.app/Contents/Java/bapps" filtering="no">
-    <fileset dir="/Applications/Burp Suite Professional.app/Contents/Java/bapps"/>
-</copy>
-<copy
-    todir="./Burp Suite Professional.app/Contents/Resources" filtering="no">
-    <fileset dir="/Applications/Burp Suite Professional.app/Contents/Resources"/>
-</copy>
-<copy
-    todir="/Applications/Burp Suite Professional.app" filtering="no">
-    <fileset dir="./Burp Suite Professional.app"/>
 </copy>
 
 </target>
